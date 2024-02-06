@@ -31,3 +31,15 @@
       line-height: 2.25rem;
    }
 }
+
+
+/* icono modo claro-oscuro */
+.fa-sun-o:before {
+   content: "\f185";
+   /* Este valor es del icono del SOL (Font Awesome 4.7.0 Icon) */
+}
+
+.fa-moon-o:before {
+   content: "\f186";
+   /* Este valor es del icono del Luna (Font Awesome 4.7.0 Icon) */
+}

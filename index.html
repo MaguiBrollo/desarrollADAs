@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,10 +22,10 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<!-- ***************************** BODY *********************************** -->
-	<body class="bg-white font-Raleway">
+	<body class="bg-gray-100 dark:bg-gray-400 font-Raleway">
 		<header class="w-full">
 			<div
-				class="bg-colPpal w-full h-[auto] md:h-[100px] flex flex-col md:flex-row items-center"
+				class="bg-colPpal dark:bg-gray-500 w-full h-[auto] md:h-[100px] flex flex-col md:flex-row items-center"
 			>
 				<div class="flex flex-row w-full md:w-[45%]">
 					<div class="w-[80%] min-w-[50px] pl-2.5">
@@ -48,13 +48,13 @@
 					</div>
 				</div>
 				<div
-					class="w-[55%] flex justify-center w-full md:justify-end bg-zinc-50 md:bg-colPpal hidden md:flex"
+					class="w-[55%] flex justify-center w-full md:justify-end bg-zinc-100 md:dark:bg-gray-500 md:bg-colPpal hidden md:flex"
 					id="nav"
 				>
 					<div class="flex flex-col md:flex-row font-Lora text-sm md:text-lg">
 						<a
 							href="#"
-							class="px-3 my-1 md:mx-1 md:my-0 py-1 hover:bg-indigo-200 focus:bg-indigo-200 rounded-lg hover:shadow-md focus:shadow-md hover:shadow-indigo-100 focus:shadow-indigo-100"
+							class="px-3 my-1 md:mx-1 md:my-0 py-1 rounded-lg hover:bg-indigo-200 focus:bg-indigo-200 hover:dark:bg-gray-300 focus:dark:bg-gray-300 hover:shadow-md focus:shadow-md hover:shadow-indigo-100 focus:shadow-indigo-100 hover:dark:shadow-gray-50 focus:dark:shadow-gray-50"
 							id="menu-inicio"
 						>
 							<i class="fa-solid fa-house"></i>
@@ -62,7 +62,7 @@
 						</a>
 						<a
 							href="#"
-							class="px-3 my-1 md:mx-1 md:my-0 py-1 hover:bg-indigo-200 focus:bg-indigo-200 rounded-lg hover:shadow-md focus:shadow-md hover:shadow-indigo-100 focus:shadow-indigo-100"
+							class="px-3 my-1 md:mx-1 md:my-0 py-1 rounded-lg hover:bg-indigo-200 focus:bg-indigo-200 hover:dark:bg-gray-300 focus:dark:bg-gray-300 hover:shadow-md focus:shadow-md hover:shadow-indigo-100 focus:shadow-indigo-100 hover:dark:shadow-gray-50 focus:dark:shadow-gray-50"
 							id="menu-balance"
 						>
 							<i class="fa-solid fa-chart-line"></i>
@@ -71,7 +71,7 @@
 
 						<a
 							href="#"
-							class="px-3 my-1 md:mx-1 md:my-0 py-1 hover:bg-indigo-200 focus:bg-indigo-200 rounded-lg hover:shadow-md focus:shadow-md hover:shadow-indigo-100 focus:shadow-indigo-100"
+							class="px-3 my-1 md:mx-1 md:my-0 py-1 rounded-lg hover:bg-indigo-200 focus:bg-indigo-200 hover:dark:bg-gray-300 focus:dark:bg-gray-300 hover:shadow-md focus:shadow-md hover:shadow-indigo-100 focus:shadow-indigo-100 hover:dark:shadow-gray-50 focus:dark:shadow-gray-50"
 							id="menu-categorias"
 						>
 							<i class="fa-solid fa-list"></i>
@@ -80,11 +80,20 @@
 
 						<a
 							href="#"
-							class="px-3 my-1 md:mx-1 md:my-0 py-1 hover:bg-indigo-200 focus:bg-indigo-200 rounded-lg hover:shadow-md focus:shadow-md hover:shadow-indigo-100 focus:shadow-indigo-100"
+							class="px-3 my-1 md:mx-1 md:my-0 py-1 rounded-lg hover:bg-indigo-200 focus:bg-indigo-200 hover:dark:bg-gray-300 focus:dark:bg-gray-300 hover:shadow-md focus:shadow-md hover:shadow-indigo-100 focus:shadow-indigo-100 hover:dark:shadow-gray-50 focus:dark:shadow-gray-50"
 							id="menu-reportes"
 						>
 							<i class="fa-solid fa-chart-pie"></i>
 							Reportes
+						</a>
+
+						<a
+							href="#"
+							class="px-3 my-1 md:mx-1 md:my-0 py-1 rounded-lg hover:bg-indigo-200 focus:bg-indigo-200 hover:dark:bg-gray-300 focus:dark:bg-gray-300 hover:shadow-md focus:shadow-md hover:shadow-indigo-100 focus:shadow-indigo-100 hover:dark:shadow-gray-50 focus:dark:shadow-gray-50"
+							id="btn-claro-oscuro"
+						>
+							<i class="fa fa-moon-o" aria-hidden="true"></i>
+							Modo Oscuro
 						</a>
 					</div>
 				</div>
@@ -100,7 +109,7 @@
 			>
 				<img
 					class="w-[80%]"
-					src="img/ahorros.jpg"
+					src="img/ahorros.png"
 					alt="Imagen de portada"
 					aria-label="Imagen de portada, mujer ahorrando"
 				/>
@@ -120,9 +129,13 @@
 				<!-- contenedor BALANCE -->
 				<div class="flex flex-col w-full h-full lg:w-[40%]">
 					<div
-						class="bg-zinc-50 h-[250px] lg:w-full m-4 p-5 rounded-lg shadow-2xl"
+						class="bg-zinc-50 dark:bg-gray-300 h-[250px] lg:w-full m-4 p-5 rounded-lg shadow-2xl"
 					>
-						<h2 class="text-colSec font-Lora text-4xl font-bold">Balance</h2>
+						<h2
+							class="text-colSec dark:text-black font-Lora text-4xl font-bold"
+						>
+							Balance
+						</h2>
 						<p class="clifford">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
 							recusandae distinctio officiis. Voluptates explicabo aperiam omnis
@@ -132,9 +145,13 @@
 					</div>
 					<!-- contenedor FILTROS -->
 					<div
-						class="bg-zinc-50 h-[400px] lg:w-full m-4 p-5 rounded-lg shadow-2xl"
+						class="bg-zinc-50 dark:bg-gray-300 h-[400px] lg:w-full m-4 p-5 rounded-lg shadow-2xl"
 					>
-						<h2 class="text-colSec font-Lora text-4xl font-bold">Filtros</h2>
+						<h2
+							class="text-colSec dark:text-black font-Lora text-4xl font-bold"
+						>
+							Filtros
+						</h2>
 						<p>
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
 							Reiciendis quod eos, officiis molestias quibusdam non eius
@@ -146,9 +163,19 @@
 
 				<!-- contenedor OPERACIONES -->
 				<div
-					class="bg-zinc-50 h-[auto] lg:w-[55%] m-4 p-5 rounded-lg shadow-2xl"
+					class="bg-zinc-50 dark:bg-gray-300 h-[auto] lg:w-[55%] m-4 p-5 rounded-lg shadow-2xl"
 				>
-					<h2 class="text-colSec font-Lora text-4xl font-bold">Operaciones</h2>
+					<h2 class="text-colSecdark:text-black font-Lora text-4xl font-bold">
+						Operaciones
+					</h2>
+					<div class="flex justify-center m-10">
+					<img
+						class="w-[50%]"
+						src="img/operaciones.svg"
+						alt="Imagen de Reportes"
+						aria-label="Imagen de reportes"
+					/>
+				</div>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
 						voluptates voluptatibus dolorum expedita eveniet veniam similique
@@ -161,10 +188,12 @@
 			<!-- ***************************************************************** -->
 			<!-- =================== CONTENEDOR Menú: Categorías  =================== -->
 			<div
-				class="hidden bg-zinc-50 h-[auto] lg:w-full m-4 p-5 rounded-lg shadow-2xl max-w-[1100px]"
+				class="hidden bg-zinc-50 dark:bg-gray-300 h-[auto] lg:w-full m-4 p-5 rounded-lg shadow-2xl max-w-[1100px]"
 				id="cont-menu-categorias"
 			>
-				<h2 class="text-colSec font-Lora text-4xl font-bold">Categorías</h2>
+				<h2 class="text-colSec dark:text-black font-Lora text-4xl font-bold">
+					Categorías
+				</h2>
 				<p>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
 					nesciunt amet odio inventore sequi nulla commodi molestiae ut saepe.
@@ -176,18 +205,25 @@
 			<!-- ***************************************************************** -->
 			<!-- =================== CONTENEDOR Menú: Reportes  =================== -->
 			<div
-				class="hidden bg-zinc-50 h-[auto] lg:w-full m-4 p-5 rounded-lg shadow-2xl max-w-[1100px]"
+				class="hidden bg-zinc-50 dark:bg-gray-300 h-[auto] lg:w-full m-4 p-5 rounded-lg shadow-2xl max-w-[1100px]"
 				id="cont-menu-reportes"
 			>
-				<h2 class="text-colSec font-Lora text-4xl font-bold">Reportes</h2>
+				<h2 class="text-colSec dark:text-black font-Lora text-4xl font-bold">
+					Reportes
+				</h2>
+				<div class="flex justify-center m-10">
+					<img
+						class="w-[50%]"
+						src="img/reportes.svg"
+						alt="Imagen de Reportes"
+						aria-label="Imagen de reportes"
+					/>
+				</div>
 				<p>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
 					nesciunt amet odio inventore sequi nulla commodi molestiae ut saepe.
 					Eveniet consequatur autem sunt id odit fugiat repudiandae vel fuga
 					nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-					Architecto ullam corrupti nihil placeat dolorem porro saepe vero
-					soluta quasi rerum temporibus at quos, repudiandae ducimus libero
-					illum sunt. Accusamus, minima.
 				</p>
 			</div>
 		</main>

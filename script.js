@@ -1,4 +1,4 @@
-/* ================== Menú Hamburguesa ================ */
+/* ================== Menú  - y Menú Hambburguesa  ================ */
 const nav = document.getElementById("nav");
 const abrir = document.getElementById("abrir");
 const cerrar = document.getElementById("cerrar");
@@ -7,11 +7,6 @@ const menuInicio = document.getElementById("menu-inicio");
 const menuBalance = document.getElementById("menu-balance");
 const menuCategorias = document.getElementById("menu-categorias");
 const menuReportes = document.getElementById("menu-reportes");
-
-const cerrar_h = document.getElementById("cerrar_h");
-const cerrar_p = document.getElementById("cerrar_p");
-const cerrar_c = document.getElementById("cerrar_c");
-const cerrar_co = document.getElementById("cerrar_co");
 
 abrir.addEventListener("click", () => {
 	nav.classList.remove("hidden");
@@ -61,3 +56,44 @@ menuCategorias.addEventListener("click", () => {
 menuReportes.addEventListener("click", () => {
 	mostrar(contenedor_menuReportes);
 });
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* ======================== CLARO - OSCURO ========================  */
+const btn_claro_oscuro = document.getElementById("btn-claro-oscuro");
+
+btn_claro_oscuro.addEventListener("click", () => {
+	if (btn_claro_oscuro.textContent.trim() === "Modo Oscuro") {
+		//document.documentElement.setAttribute("data-theme-color", "dark");
+		btn_claro_oscuro.innerHTML = `<i class="fa fa-sun-o"></i> Modo Claro`;
+		document.documentElement.classList.add("dark");
+		localStorage.theme = "dark";
+	} else {
+		//document.documentElement.setAttribute("data-theme-color", "light");
+		btn_claro_oscuro.innerHTML = `<i class="fa fa-moon-o" aria-hidden="true"></i> Modo Oscuro`;
+		document.documentElement.classList.remove("dark");
+		localStorage.theme = "light";
+	}
+});
+
+function modoClaroOscuro() {
+	if (
+		localStorage.theme === "dark" ||
+		(!("theme" in localStorage) &&
+			window.matchMedia("(prefers-color-scheme: dark)").matches)
+	) {
+		btn_claro_oscuro.innerHTML = `<i class="fa fa-sun-o"></i> Modo Claro`;
+		document.documentElement.classList.add("dark");
+	} else {
+		btn_claro_oscuro.innerHTML = `<i class="fa fa-moon-o" aria-hidden="true"></i> Modo Oscuro`;
+		document.documentElement.classList.remove("dark");
+	}
+}
+/* ------------------------------------------------------------------------------------------------ */
+
+/* ================================================================================================*/
+function funcionesAEjecutar() {
+	modoClaroOscuro();
+}
+/* Cuando se termina de cargar la página  */
+window.onload = funcionesAEjecutar;

@@ -1,10 +1,11 @@
 tailwind.config = {
+	darkMode: "class",
 	theme: {
 		screens: {
 			sm: "600px",
 			// => @media (min-width: 576px) { ... }
 
-			md: "875px",
+			md: "960px",
 			// => @media (min-width: 960px) { ... }
 
 			lg: "1024px",
