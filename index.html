@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>* AhorrADAs *</title>
-
+		<link rel="icon" href="/imagen/ahorrosCuad.ico" type="image/png" />
 		<!-- STYLE para los iconos  -->
 		<link
 			rel="stylesheet"
@@ -47,12 +47,13 @@
 						</button>
 					</div>
 				</div>
+
 				<div
-					class="w-[55%] flex justify-center w-full md:justify-end bg-zinc-200 md:dark:bg-gray-500 md:bg-colPpal hidden md:flex"
+					class="flex justify-center w-full md:justify-end bg-zinc-200 md:dark:bg-gray-500 md:bg-colPpal hidden md:flex"
 					id="nav"
 				>
 					<div
-						class="flex flex-col md:flex-row font-Lora text-sm md:text-lg items-center"
+						class="flex flex-col md:flex-row font-Lora text-sm md:text-lg items-center md:pr-[20px]"
 					>
 						<a
 							href="#"
@@ -109,7 +110,7 @@
 			>
 				<img
 					class="w-[80%] grayscale-0 dark:grayscale"
-					src="img/ahorros.png"
+					src="imagen/ahorros.png"
 					alt="Imagen de portada"
 					aria-label="Imagen de portada, mujer ahorrando"
 				/>
@@ -136,7 +137,7 @@
 						>
 							Balance
 						</h2>
-						<p class="clifford">
+						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
 							recusandae distinctio officiis. Voluptates explicabo aperiam omnis
 							tenetur, vero sequi dolores repellendus, iusto corporis quisquam
@@ -171,7 +172,7 @@
 					<div class="flex justify-center m-10">
 						<img
 							class="w-[50%] grayscale-0 dark:grayscale"
-							src="img/operaciones.svg"
+							src="imagen/operaciones.svg"
 							alt="Imagen de Reportes"
 							aria-label="Imagen de reportes"
 						/>
@@ -189,7 +190,7 @@
 			<!-- =================== CONTENEDOR Menú: Categorías  =================== -->
 			<div
 				class="hidden bg-zinc-50 dark:bg-gray-300 h-[auto] lg:w-full m-4 p-5 rounded-lg shadow-2xl max-w-[1100px]"
-				id="cont-menu-categorias"
+				id="cont-menu-balance"
 			>
 				<h2 class="text-colSec dark:text-black font-Lora text-4xl font-bold">
 					Categorías
@@ -208,23 +209,48 @@
 				class="hidden bg-zinc-50 dark:bg-gray-300 h-[auto] lg:w-full m-4 p-5 rounded-lg shadow-2xl max-w-[1100px]"
 				id="cont-menu-reportes"
 			>
+				<!-- título -->
 				<h2 class="text-colSec dark:text-black font-Lora text-4xl font-bold">
 					Reportes
 				</h2>
+				<!-- Esta img se muestra cuanod NO hay reportes-->
 				<div class="flex justify-center m-10">
 					<img
 						class="w-[50%] grayscale-0 dark:grayscale"
-						src="img/reportes.svg"
+						src="imagen/reportes.svg"
 						alt="Imagen de Reportes"
 						aria-label="Imagen de reportes"
 					/>
 				</div>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-					nesciunt amet odio inventore sequi nulla commodi molestiae ut saepe.
-					Eveniet consequatur autem sunt id odit fugiat repudiandae vel fuga
-					nemo! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-				</p>
+				<!-- Esta img se muestra cuanod NO hay reportes-->
+				<div>
+					<h4>Resumen</h4>
+					<div>
+						<div>Categoría con mayor ganancia</div>
+						<div>xxxxxxxxx</div>
+						<div>999999</div>
+					</div>
+					<div>
+						<div>Categoría con mayor gasto</div>
+						<div>xxxxxxxxx</div>
+						<div>999999</div>
+					</div>
+					<div>
+						<div>Categoría con mayor balance</div>
+						<div>xxxxxxxxx</div>
+						<div>999999</div>
+					</div>
+					<div>
+						<div>Mes con mayor ganancia</div>
+						<div>xxxxxxxxx</div>
+						<div>999999</div>
+					</div>
+					<div>
+						<div>Mes con mayor gasto</div>
+						<div>xxxxxxxxx</div>
+						<div>999999</div>
+					</div>
+				</div>
 			</div>
 		</main>
 	</body>

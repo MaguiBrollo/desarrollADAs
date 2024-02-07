@@ -5,7 +5,7 @@ tailwind.config = {
 			sm: "600px",
 			// => @media (min-width: 576px) { ... }
 
-			md: "960px",
+			md: "860px",
 			// => @media (min-width: 960px) { ... }
 
 			lg: "1024px",
