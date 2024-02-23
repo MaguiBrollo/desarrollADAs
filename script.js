@@ -412,8 +412,6 @@ function filtrar_oper() {
 	const cate = filtro_cate.value;
 	const fechaDesde = new Date(`${filtro_fecha.value}T00:00:00`);
 	const orden = filtro_orden.value;
-	console.log(fechaDesde);
-	console.log(filtro_fecha.value);
 
 	/* Filtrar por Tipo */
 	if (tipo !== "TODO") {
