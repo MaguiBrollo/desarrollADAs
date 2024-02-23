@@ -14,8 +14,8 @@ tailwind.config = {
 		extend: {
 			fontFamily: {
 				Lora: ['"Lora"'],
-				Roboto: ['"Roboto"'], //no queda bien, sacar too de CSS
-				Raleway: ['"Raleway"'],
+				Roboto: ['"Roboto"'],
+				/* Raleway: ['"Raleway"'], */ //no me gusta los números
 			},
 
 			colors: {
